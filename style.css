@@ -162,7 +162,7 @@ body {
 /* ============= Grid Content Styling =============== */
 
 .grid-content{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-top: 6rem;
   margin-bottom: 18rem;
   display: grid;
@@ -230,6 +230,25 @@ body {
   font-size: 1.4rem;
   font-family: "Alata", "sans-serif";
 }
+
+/* ======================= Media Queries ================ */
+
+@media (max-width:75em) {
+  .grid-content{
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1;
+  }
+}
+
+@media (max-width:65em) {
+  .image-content{
+    left: 30%;
+  }
+
+}
+
+
 
 
 
