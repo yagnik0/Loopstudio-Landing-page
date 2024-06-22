@@ -19,6 +19,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* ======== Hero Section ========= */
 
 .container {
@@ -27,10 +31,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 14.6rem;
+  padding-bottom: 12.6rem;
 }
 
-.hero-section, .second-section, .third-section, .footer-content{
+.hero-section,
+.second-section,
+.third-section,
+.footer-content {
   width: 90%;
   max-width: 130rem;
   margin: 0 auto;
@@ -74,26 +81,43 @@ body {
 }
 
 .nav-list li a:hover:before {
-    width: 100%;
+  width: 100%;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mobile-nav-btn {
+  display: none;
+  background: transparent;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
 }
 
 /* ============== Hero Content Head Styling ============== */
 
-.hero-content{
-    max-width: 65rem;
-    border: 2px solid white;
-    letter-spacing: 1.2px;
-    line-height: 70px;
-    text-transform: uppercase;
-    padding: 4rem;
-    color: var(--white);
-    font-family: 'Josefin Sans', 'sans-serif';
-    margin-top: 10rem;
+.hero-content {
+  max-width: 65rem;
+  border: 2px solid white;
+  letter-spacing: 1.2px;
+  line-height: 70px;
+  text-transform: uppercase;
+  padding: 4rem;
+  color: var(--white);
+  font-family: "Josefin Sans", "sans-serif";
+  margin-top: 10rem;
 }
 
-.hero-content h1{
-    font-weight: 300;
-    font-size: 7rem;
+.hero-content h1 {
+  font-weight: 300;
+  font-size: 7rem;
 }
 
 /* ============== Second Section Styling =========== */
@@ -103,7 +127,7 @@ body {
   position: relative;
 }
 
-.image-content{
+.image-content {
   padding: 6.4rem;
   max-width: 53rem;
   background-color: #fff;
@@ -112,15 +136,15 @@ body {
   left: 44%;
 }
 
-.image-content h2{
-  font-family: 'Josefin Sans', 'sans-serif';
+.image-content h2 {
+  font-family: "Josefin Sans", "sans-serif";
   font-size: 4.8rem;
   line-height: 48px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.image-content p{
+.image-content p {
   font-family: "Alata", "sans-serif";
   font-size: 1.4rem;
   line-height: 24.8px;
@@ -136,8 +160,8 @@ body {
   align-items: center;
 }
 
-.third-title-box h2{
-  font-family: 'Josefin Sans', 'sans-serif';
+.third-title-box h2 {
+  font-family: "Josefin Sans", "sans-serif";
   font-size: 4.8rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -154,15 +178,14 @@ body {
   transition: all 0.3s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #000;
   color: #fff;
 }
 
 /* ============= Grid Content Styling =============== */
 
-.grid-content{
-  /* margin: 0 auto; */
+.grid-content {
   margin-top: 6rem;
   margin-bottom: 18rem;
   display: grid;
@@ -170,26 +193,27 @@ body {
   gap: 3rem;
 }
 
-.column-items{
+.column-items {
   position: relative;
   transition: all 0.3s;
 }
 
-.column-items:hover{
+.column-items:hover {
   cursor: pointer;
   opacity: 0.5;
   scale: 1.05;
-} 
+}
 
-.title-head{
+
+.title-head {
   position: absolute;
   width: 70%;
   bottom: 10%;
   left: 10%;
 }
 
-.title-head h3{
-  font-family: 'Josefin Sans', 'sans-serif';
+.title-head h3 {
+  font-family: "Josefin Sans", "sans-serif";
   font-size: 3.2rem;
   line-height: 32px;
   font-weight: 300;
@@ -199,7 +223,7 @@ body {
 
 /*======================= Footer Styling ===================== */
 
-.footer-section{
+.footer-section {
   background-color: #000;
   color: #fff;
 }
@@ -211,11 +235,11 @@ body {
   align-items: center;
 }
 
-.links{
+.links {
   margin-top: 2.6rem;
 }
 
-.social-logo{
+.social-logo {
   display: flex;
   gap: 1.6rem;
   margin-bottom: 2.8rem;
@@ -226,33 +250,163 @@ body {
   cursor: pointer;
 }
 
-.rights p{
+.rights p {
   font-size: 1.4rem;
   font-family: "Alata", "sans-serif";
 }
 
+.hidden {
+  display: none;
+}
+
 /* ======================= Media Queries ================ */
 
-@media (max-width:75em) {
-  .grid-content{
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1;
+@media (max-width: 80em) {
+  .grid-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-content {
+    left: 45%;
   }
 }
 
-@media (max-width:65em) {
+@media (max-width: 51em) {
+  .container {
+    background-image: url(images/mobile/image-hero.jpg);
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 8rem;
+    line-height: 1.1;
+  }
+
+  .second-section {
+    text-align: center;
+  }
+
+  .second-image img{
+    width: 80vw;
+  }
+
+  .image-content {
+    position: relative;
+    left: 15%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-logo {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .logo-flex {
+    text-align: center;
+  }
+
+  .column-items img{
+    width: 90vw;
+  }
+}
+
+@media (max-width: 42em) {
+
+  html body .container{
+    padding-bottom: 2rem;
+  }
+  
+  .hero-content h1{
+    font-size: 4rem;
+  }
+  
+  .third-section {
+    position: relative;
+  }
+
+  .second-section{
+    padding-bottom: 5rem;
+  }
+
+  .btn-primary {
+    position: absolute;
+    bottom: -5%;
+  }
+
+  .third-title-box {
+    justify-content: center;
+  }
+
   .image-content{
-    left: 30%;
+    left: 2%;
   }
 
+  .image-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .third-title-box h2{
+    font-size: 4rem;
+  }
+
+  /* Hamburger Styling */
+  
+     .mobile-nav-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .nav-links {
+        width: 50%;
+        height: 100vh;
+       
+        backdrop-filter: blur(50px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 2rem;
+        align-items: center;
+
+        /* To get the transition */
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .active .nav-links {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name = "close-outline"]{
+        display: block;
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name = "menu-outline"]{
+        display: none;
+    }
 }
-
-
-
-
-
-
-
-
-

@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
       rel="stylesheet"
     />
+
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -37,10 +38,14 @@
               <li><a href="#">Support</a></li>
             </ul>
           </nav>
+          <div class="mobile-nav-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon menu"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon close"></ion-icon>
+          </div>
         </header>
         <!-- Hero content -->
         <section class="hero-content">
-          <h1 class="main-heading">Immersive Experiences that Deliver</h1>
+          <h1 class="main-heading">Immersive Experiences  that Deliver</h1>
         </section>
       </div>
     </div>
@@ -81,7 +86,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width: 900px )"
+                media="(max-width: 816px )"
                 srcset="images\mobile\image-deep-earth.jpg"
               />
               <img src="images/desktop/image-deep-earth.jpg" alt="deep-earth" />
@@ -93,7 +98,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width:900px )"
+                media="(max-width:816px )"
                 srcset="images\mobile\image-night-arcade.jpg"
               />
               <img
@@ -108,7 +113,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width: 900px)"
+                media="(max-width: 816px)"
                 srcset="images\mobile\image-soccer-team.jpg"
               />
               <img
@@ -123,7 +128,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width:900px )"
+                media="(max-width:816px )"
                 srcset="images\mobile\image-grid.jpg"
               />
               <img src="images/desktop/image-grid.jpg" alt="grid" />
@@ -135,7 +140,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width: 900px)"
+                media="(max-width: 816px)"
                 srcset="images\mobile\image-from-above.jpg"
               />
               <img src="images/desktop/image-from-above.jpg" alt="from-above" />
@@ -147,7 +152,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width: 900px)"
+                media="(max-width: 816px)"
                 srcset="images\mobile\image-pocket-borealis.jpg"
               />
               <img
@@ -163,10 +168,10 @@
             <picture>
               <picture>
                 <source
-                  media="(max-width: 900px)"
+                  media="(max-width: 816px)"
                   srcset="images\mobile\image-curiosity.jpg"
                 />
-              <img src="images/desktop/image-curiosity.jpg" alt=curiosity">
+                <img src="images/desktop/image-curiosity.jpg" alt=curiosity">
               </picture>
             </picture>
             <div class="title-head">
@@ -176,7 +181,7 @@
           <div class="column-items">
             <picture>
               <source
-                media="(max-width:900px )"
+                media="(max-width:816px )"
                 srcset="images\mobile\image-fisheye.jpg"
               />
               <img src="images/desktop/image-fisheye.jpg" alt="fisheye" />
@@ -197,7 +202,7 @@
             <img src="images/logo.svg" alt="logo" />
           </div>
           <div class="links">
-            <ul class="nav-list">
+            <ul class="nav-list links-flex">
               <li><a href="#">About</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Events</a></li>
@@ -220,5 +225,15 @@
         </div>
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
